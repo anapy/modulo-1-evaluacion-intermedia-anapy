@@ -1,27 +1,47 @@
 * {
     box-sizing: border-box;
     color: inherit;
+    font-family: var(--primary-font);
+
 }
 
 :root {
     --primary-font: 'Rubik', sans-serif;
     --menu-color: #4a4a4a;
-    --background-color: rgb(137, 151, 149);
+    --background-color: #3CDBC0;
     --title-color: #FFFFFF;
 }
 
-.body {
-    font-family: var(--primary-font);
+.header {
+    width: 100vw;
+    background-color: var(--title-color);
+    position: fixed;
+    z-index: 1;
+}
+
+.home span {
+    padding: 10px;
+}
+.wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home {
+    text-transform: uppercase;
+}
+
+.main {
+    transform: translate(0px, 100px);
+    text-transform: capitalize;
+    background-color: var(--background-color);
+    color: var(--title-color);
+    height: 80vh;
 }
 
 h1 {
     margin: 0;
-}
-
-.menu {
-    text-transform: uppercase;
-}
-
-.home {
-    text-transform: capitalize;
 }
