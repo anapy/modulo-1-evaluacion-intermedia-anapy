@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    color: inherit;
+}
+
+:root {
+    --primary-font: 'Rubik', sans-serif;
+    --menu-color: #4a4a4a;
+    --background-color: rgb(137, 151, 149);
+    --title-color: #FFFFFF;
+}
+
+.body {
+    font-family: var(--primary-font);
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu {
+    text-transform: uppercase;
+}
+
+.home {
+    text-transform: capitalize;
+}
