@@ -2,7 +2,7 @@
     box-sizing: border-box;
     color: inherit;
     font-family: var(--primary-font);
-
+    text-decoration: none;
 }
 
 .body {
