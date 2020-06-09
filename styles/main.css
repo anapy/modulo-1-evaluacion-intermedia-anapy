@@ -3,8 +3,17 @@
     color: inherit;
     font-family: var(--primary-font);
     text-decoration: none;
+    margin: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 .body {
     background-color: var(--background-color);
 }
@@ -15,8 +24,6 @@
     --background-color: #3CDBC0;
     --title-color: #FFFFFF;
 }
-
-
 
 /*HEADER*/
 .header {
@@ -34,46 +41,55 @@
     flex-direction: column;
     align-items: center;
 }
+.menu ul li {
+    display: inline-block;
+}
 
-.home {
+.menu ul li a {
+    padding: 10px;
+}
+.menu {
     padding-top: 10px;
     color: var(--menu-color);
-    text-transform: uppercase; 
+    text-transform: capitalize; 
     font-size: 16px;
 }
-.home span {
-    padding-left: 10px;
-    padding-right: 10px;
+.menu span {
+    padding: 10px;
 }
 
 /*MAIN*/
+
 .main {
+    height: 100vh;
     transform: translate(0px, 115px);
-    text-transform: capitalize;
     background-color: var(--background-color);
-    color: var(--title-color);
-    width: 100vw;
-    height: 80vh;
+    color: var(--title-color); 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-h1 {
+.title {
     margin: 0;
-    font-size: 30px;
+    font-size: 1.875rem;
+    text-transform: capitalize;
+}
+.title span {
+    display: block
 }
 
 @media all and (min-width: 768px) {
     .wrapper {
         margin: 20px 30px 20px;
-        height: 60px;
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    .menu {
+        display: inline-block;
+    }
+    
     h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 }
